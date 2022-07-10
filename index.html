@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@900&family=Roboto:wght@400;500;700;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
     <!-- Кастомні стилі -->
@@ -19,10 +19,10 @@
     <!--header-->
     <header class="header">
       <nav class="header -nav">
-        <a class="logo" href="index.html"> <span class="web">Web</span>Studio</a>
+        <a class="logo-header" href="index.html"> <span class="web">Web</span>Studio</a>
         <ul class="header-list list">
           <li class="header-listitem">
-            <a class="header-link link" href="./index.html">Cтудия</a>
+            <a class="header-link link current-header" href="./index.html">Cтудия</a>
           </li>
           <li class="header-listitem">
             <a a class="header-link link" href="./portfolio.html">Портфолио</a>
@@ -36,41 +36,41 @@
         <li>
           <a class="header-mail link" href="mail to:info@devstudio.com">info@devstudio.com</a>
         </li>
-        <li><a class="header-mail link" href="tel:+380961111111">+380961111111</a></li>
+        <li><a class="header-mail link" href="tel:+380961111111">+38 0961111111</a></li>
       </ul>
     </header>
     <!--main-->
     <main>
       <!--hero-->
       <section class="hero">
-        <h1 class="hero-title">Єффективные решения для вашего бизнеса</h1>
+        <h1 class="hero-title">Эфективные решения для вашего бизнеса</h1>
         <button class="hero-button" type="button">Заказать услугу</button>
       </section>
       <!--about-->
       <section>
-        <h2 class="about-title2">Преимущество личности</h2>
+        <h2 class="about-hiddentitle">Преимущество личности</h2>
         <ul class="about-list list">
           <li class="about-listitem">
-            <h3 class="about-title2">Внимание к деталям</h3>
-            <p class="paragraph">
+            <h3 class="about-title">Внимание к деталям</h3>
+            <p class="about-description">
               Идейные соображения, а также начало повседневной работы по формированию позиции.
             </p>
           </li>
           <li class="about-listitem">
-            <h3 class="about-title2">Пунктуальность</h3>
-            <p class="paragraph">
+            <h3 class="about-title">Пунктуальность</h3>
+            <p class="about-description">
               Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
             </p>
           </li>
           <li class="about-listitem">
-            <h3 class="about-title2">Планирование</h3>
-            <p class="paragraph">
+            <h3 class="about-title">Планирование</h3>
+            <p class="about-description">
               Равным образом консультация с широким активом в значительной степени обуславливает.
             </p>
           </li>
           <li class="about-listitem">
-            <h3 class="about-title2">Современные технологии</h3>
-            <p class="paragraph">
+            <h3 class="about-title">Современные технологии</h3>
+            <p class="about-description">
               Значимость этих проблем настолько очевидна, что реализация плановых заданий.
             </p>
           </li>
@@ -78,7 +78,7 @@
       </section>
       <!--work-->
       <section>
-        <h2 class="workg-title2">Чем мы занимаемся</h2>
+        <h2 class="work-title">Чем мы занимаемся</h2>
         <ul class="work-list list">
           <li class="work-listitem">
             <img
@@ -109,47 +109,53 @@
           </li>
         </ul>
       </section>
-      <!--About us-->
-      <section class="about us">
-        <h2 class="workg-title2">Наша команда</h2>
-        <ul class="about-list list">
-          <li class="abou-listitem">
+      <!--team-->
+      <section class="team">
+        <h2 class="team-title">Наша команда</h2>
+        <ul class="team-list list">
+          <li class="team-listitem">
             <img
-              class="about-img"
+              class="team-img"
               src="./images/аboutus/img1.jpg"
               alt="worker1"
               width="270"
               height="260"
             />
-            <h3 class="about-title3">Игорь Демьяненко</h3>
-            <p class="paragraph">Product Designer</p>
+            <h3 class="team-worker">Игорь Демьяненко</h3>
+            <p class="team-description">Product Designer</p>
           </li>
-          <li class="abou-listitem">
+          <li class="team-listitem">
             <img
-              class="about-img"
+              class="team-img"
               src="./images/аboutus/img2.jpg"
               alt="worker2"
               width="270"
               height="260"
             />
-            <h3 class="about-title3">Ольга Репина</h3>
-            <p class="paragraph">Frontend Developer</p>
+            <h3 class="team-worker">Ольга Репина</h3>
+            <p class="team-description">Frontend Developer</p>
           </li>
-          <li class="abou-listitem">
+          <li class="team-listitem">
             <img
-              class="about-img"
+              class="team-img"
               src="./images/аboutus/img3.jpg"
               alt="worker3"
               width="270"
               height="260"
             />
-            <h3 class="about-title3">Николай Тарасов</h3>
-            <p class="paragraph">Marketing</p>
+            <h3 class="team-worker">Николай Тарасов</h3>
+            <p class="team-description">Marketing</p>
           </li>
-          <li class="abou-listitem">
-            <img src="./images/аboutus/img4.jpg" alt="worker4" width="270" height="260" />
-            <h3 class="about-title3">Михаил Ермаков</h3>
-            <p class="paragraph">UI Designer</p>
+          <li class="team-listitem">
+            <img
+              class="team-img"
+              src="./images/аboutus/img4.jpg"
+              alt="worker4"
+              width="270"
+              height="260"
+            />
+            <h3 class="team-worker">Михаил Ермаков</h3>
+            <p class="team-description">UI Designer</p>
           </li>
         </ul>
       </section>
@@ -157,7 +163,7 @@
     <footer>
       <!--adress-->
       <section class="adress">
-        <a class="logo" href="index.html"> <span class="web">Web</span>Studio</a>
+        <a class="logo-adress" href="index.html"> <span class="web">Web</span>Studio</a>
         <address>
           <ul class="adress-list list">
             <li class="adress-listitem">
@@ -173,7 +179,7 @@
               <a class="adress-contact link" href="mailto:info@devstudio.com">info@devstudio.com</a>
             </li>
             <li class="adress-listitem">
-              <a class="adress-contact link" href="tel:+380961111111">+380961111111</a>
+              <a class="adress-contact link" href="tel:+38 099 111 11 11">+38 099 111 11 11</a>
             </li>
           </ul>
         </address>

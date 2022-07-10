@@ -19,11 +19,13 @@ body  {background-color: var(--secondary-color);
            color: var(--title-text-color);
            font-family: var(--main-font), sans-serif; 
            font-size: 14px;
-           line-height: 1.71
+           line-height: 1.71;
+           letter-spacing: 0.03em;
+        
 }
 
 /* Header section */
-.logo { text-decoration: none  ; 
+.logo-header { text-decoration: none  ; 
 color: #000000;
 /* position: absolute;
 width: 145px;
@@ -34,17 +36,17 @@ font-family: var(--secondary-font);
 font-weight: 700;
 font-size: 26px;
 line-height: 1.19;
-letter-spacing: 0.03em;
+
 } 
 .web {  color: var(--accent-color);
  }
 
 .header-link 
-{ font-family: var(--main-font);
-font-weight: 500;
-font-size: 14px;
+{ font-weight: 500;
 line-height: 1.14;
-letter-spacing: 0.02em;}
+letter-spacing: 0.02em;
+
+}
 
 .header-link:hover,
 .header-link:focus,
@@ -53,10 +55,8 @@ letter-spacing: 0.02em;}
 {color: var(--accent-color);}
 
 .header-mail 
-{font-family: var(--main-font);
-font-weight: 500;
-font-size: 14px;
-line-height: 16px;
+{font-weight: 500;
+line-height: 1.14;
 letter-spacing: 1.14;
 color: var(--primary-text-color)}
 
@@ -76,7 +76,6 @@ color: var(--secondary-color);}
 .hero-button
 {background-color: var(--accent-color);
 color: var(--secondary-color);
-font-family: var(--main-font);
 font-weight: 700;
 font-size: 16px;
 line-height: 1.88;
@@ -85,7 +84,7 @@ cursor: pointer;
 }
  
 .hero-title
-{font-family: var(--main-font);
+{
 font-weight: 900;
 font-size: 44px;
 line-height: 1.36;
@@ -94,44 +93,73 @@ text-transform: uppercase;
 color: var(--secondary-color);
 text-align: center;}
 
-.about-title2
-{font-family: var(--main-font);
-font-weight: 700;
-font-size: 14px;
-line-height: 1.14;
-letter-spacing: 0.03em;
-text-transform: uppercase;
-color: var(--title-text-color);
+.about-hiddentitle
+{ font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+}
 
+.about-title
+{
+font-weight: 700;
+line-height: 1.14;
+text-transform: uppercase;
 }
 
 
-.paragraph{
-font-family:var(--main-font);
-font-size: 14px;
+.about-description{
 line-height: 1.71;
 color: var(--primary-text-color);}
 
-.workg-title2
-{font-family: var(--main-font);
+.work-title
+{
 font-weight: 700;
 font-size: 36px;
 line-height: 1.16;
 text-align: center;
-letter-spacing: 0.03em;
-color: var(--title-text-color);}
+}
 
-.workg-title2::selection
-{background-color: #757575;}
+.work-title::selection
+{background-color: var(--primary-text-color);}
 
+.team-title
+{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+}
+.team-worker
+{
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.19;
+        text-align: center;
+}
+.team-description
+{
+    font-size: 16px;
+    line-height: 1.9;
+    text-align: center;
+    color: var(--primary-text-color);
+}
+
+.logo-adress {
+    text-decoration: none;
+    color:var(--secondary-color);
+    font-family: var(--secondary-font);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    
+
+}
 .adress
 {background-color: var(--backgroundcolor);}
 
 .adress-linkmapa, .adress-contact
-{font: var(--main-font);
-font-size: 14px;
-line-height: 1.71;
-letter-spacing: 0.03em;
+{
 color: var(--secondary-color);
 font-style: normal;
 }
@@ -139,28 +167,20 @@ font-style: normal;
 .adress-contact
 {color: rgba(255, 255, 255, 0.6)}
 
-/* .line 
-{position: absolute;
-width: 1600px;
-height: 0px;
-left: 0px;
-top: 80px;
-border: 1px solid #ECECEC;} */
 
-.hero-buttonporpholio
-{font-family: var(--main-font);
+
+.hero-buttonportfolio
+{
 font-weight: 500;
 font-size: 16px;
 line-height: 1.63;
 text-align: center;
-letter-spacing: 0.03em;
-color: var(--title-text-color);
 background-color: #F5F4FA;
 cursor: pointer;
 }
 
-.hero-buttonporpholio:hover,
-.hero-buttonporpholio:focus {
+.hero-buttonportfolio:hover,
+.hero-buttonportfolio:focus {
     background-color: #188CE8;
     color: var(--secondary-color);
 }
@@ -168,18 +188,26 @@ cursor: pointer;
 {background-color: #2196F3;
 color: var(--secondary-color);}
 
-.about-titlefilters3
-{font-family: var(--main-font);
+.current-header
+{color: var(--accent-color);}
+
+.filters-title
+{
 font-weight: 700;
 font-size: 18px;
-line-height: 2px;
+line-height: 2;
 letter-spacing: 0.06em;
-color: var(--title-text-color);
 }
-.paragraphfilter
-{font-family: var(--main-font);
+.filters-description
+{
     font-size: 16px;
     line-height: 1.9;
-    letter-spacing: 0.03em;
     color: var(--primary-text-color);
+}
+.adress-linkmapa:hover,
+.adress-linkmapa:focus,
+.adress-contact:hover,
+.adress-contact:focus
+{
+color: var(--accent-color);
 }
